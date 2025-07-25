@@ -17,9 +17,9 @@ function love.draw()
     love.graphics.setBackgroundColor(0, 194/255, 1)
     love.graphics.print(love.timer.getFPS())
 
-    for i = 1, 16 do
-        love.graphics.setColor(0, 104/255, 1, 0.4*i/16)
-        love.graphics.rectangle("fill", 0, i*(wh/16), ww, i*(wh/16))
+    for i = 1, 64 do
+        love.graphics.setColor(0, 104/255, 1, 0.02*i/16)
+        love.graphics.rectangle("fill", 0, i*(wh/64), ww, i*(wh/64))
     end
 
     love.graphics.setColor(1, 1, 117/255)

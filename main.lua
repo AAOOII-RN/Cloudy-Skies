@@ -28,7 +28,7 @@ function love.draw()
     for i = 1, 32 do
         clouds = (hn:hillNoise(ticker/2+i, 1) + hn:hillNoise(ticker/2+i, 2))/2
         if clouds >= 0.1 then
-            love.graphics.setColor(1,1,1)
+            love.graphics.setColor(1,1,1,clouds*3)
             love.graphics.circle("fill", i*ww/32, 2*wh/3 + clouds*-50, clouds*100)
         end
     end

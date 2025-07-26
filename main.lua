@@ -10,7 +10,7 @@ function love.load()
 end
 
 function love.update(dt)
-    ticker = ticker + 600 * dt
+    ticker = ticker + 1 * dt
 end
 
 function love.draw()

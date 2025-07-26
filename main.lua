@@ -20,7 +20,7 @@ function love.draw()
 
     local transition = 128
     for i = 1, transition do
-        love.graphics.setColor(0, 104/255, 1, i/transition/50)
+        love.graphics.setColor(0, 104/255, 1, i/transition/12.5)
         love.graphics.rectangle("fill", 0, (i-1)*wh/transition, ww, i*wh/transition)
     end
     love.graphics.setColor(1,0,0)
